@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataNexus | Home</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <div class="boot-screen" data-boot>
+    <div class="boot-card">
+      <h2 class="boot-title">SYSTEM BOOT</h2>
+      <ul class="boot-log" data-boot-log></ul>
+      <div class="boot-progress-wrap"><div class="boot-progress" data-boot-progress></div></div>
+      <div class="boot-percent">0% <span class="cursor" data-boot-percent></span></div>
+    </div>
+  </div>
+
+  <canvas id="matrix"></canvas>
+  <div class="grid-overlay"></div>
+  <div class="radar"></div>
+
+  <div class="wrapper">
+    <header class="topbar">
+      <nav class="nav">
+        <div class="brand">DATANEXUS COMMAND</div>
+        <div class="links">
+          <a class="active" href="./index.html">HOME</a>
+          <a href="./skills.html">SKILLS</a>
+          <a href="./projects.html">PROJECTS</a>
+          <a href="./about.html">ABOUT</a>
+          <a href="./connect.html">CONNECT</a>
+          <a href="./contact.html">CONTACT</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section panel hero">
+        <div>
+          <h1>Sujit Murari</h1>
+          <h2>Business Analytics Student</h2>
+          <p class="tagline">Transforming business data into strategic insights.</p>
+          <div class="chips">
+            <span class="chip">Tableau</span>
+            <span class="chip">Excel</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Python</span>
+            <span class="chip">Pandas</span>
+          </div>
+          <div class="buttons">
+            <a class="btn" href="./projects.html">View Projects</a>
+            <a class="btn alt" href="./skills.html">View Skills</a>
+            <a class="btn" href="./contact.html">Contact</a>
+          </div>
+          <p class="terminal"><span data-terminal-log class="cursor"></span></p>
+        </div>
+        <div class="panel">
+          <h3>Live Intelligence Feed</h3>
+          <p class="meta">Monitoring business trends, KPI shifts, and optimization opportunities in real-time decision environments.</p>
+        </div>
+      </section>
+
+      <section class="section panel">
+        <h3>KPI Dashboard</h3>
+        <div class="kpis">
+          <div class="kpi"><small>Projects Completed</small><div class="value" data-count="12" data-suffix="+">0</div></div>
+          <div class="kpi"><small>Skills</small><div class="value" data-count="5">0</div></div>
+          <div class="kpi"><small>Tools</small><div class="value" data-count="9">0</div></div>
+          <div class="kpi"><small>Internship Status</small><div class="value" data-count="1" data-suffix=" Open">0</div></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">DATANEXUS v2.0 | ANALYTICS COMMAND CENTER</footer>
+  </div>
+
+  <script src="./assets/js/loader.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

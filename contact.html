@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataNexus | Contact</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <div class="boot-screen" data-boot>
+    <div class="boot-card">
+      <h2 class="boot-title">SYSTEM BOOT</h2>
+      <ul class="boot-log" data-boot-log></ul>
+      <div class="boot-progress-wrap"><div class="boot-progress" data-boot-progress></div></div>
+      <div class="boot-percent">0% <span class="cursor" data-boot-percent></span></div>
+    </div>
+  </div>
+
+  <canvas id="matrix"></canvas>
+  <div class="grid-overlay"></div>
+  <div class="radar"></div>
+
+  <div class="wrapper">
+    <header class="topbar">
+      <nav class="nav">
+        <div class="brand">DATANEXUS COMMAND</div>
+        <div class="links">
+          <a href="./index.html">HOME</a>
+          <a href="./skills.html">SKILLS</a>
+          <a href="./projects.html">PROJECTS</a>
+          <a href="./about.html">ABOUT</a>
+          <a href="./connect.html">CONNECT</a>
+          <a class="active" href="./contact.html">CONTACT</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section panel">
+        <h1>Secure Contact Terminal</h1>
+        <p class="terminal">ssh hire@sujit<span class="cursor"></span></p>
+
+        <form class="form-grid" data-contact action="https://formspree.io/f/xreybnby" method="POST">
+          <div>
+            <label for="name">name:</label>
+            <input id="name" name="name" type="text" required />
+            <div class="error" id="nameErr"></div>
+          </div>
+
+          <div>
+            <label for="email">email:</label>
+            <input id="email" name="email" type="email" required />
+            <div class="error" id="emailErr"></div>
+          </div>
+
+          <div>
+            <label for="message">message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <div class="error" id="messageErr"></div>
+          </div>
+
+          <button class="btn" type="submit">[ TRANSMIT MESSAGE ]</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">CONTACT TRANSMISSION CHANNEL READY</footer>
+  </div>
+
+  <script src="./assets/js/loader.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

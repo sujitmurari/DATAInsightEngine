@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataNexus | Projects</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <div class="boot-screen" data-boot>
+    <div class="boot-card">
+      <h2 class="boot-title">SYSTEM BOOT</h2>
+      <ul class="boot-log" data-boot-log></ul>
+      <div class="boot-progress-wrap"><div class="boot-progress" data-boot-progress></div></div>
+      <div class="boot-percent">0% <span class="cursor" data-boot-percent></span></div>
+    </div>
+  </div>
+
+  <canvas id="matrix"></canvas>
+  <div class="grid-overlay"></div>
+  <div class="radar"></div>
+
+  <div class="wrapper">
+    <header class="topbar">
+      <nav class="nav">
+        <div class="brand">DATANEXUS COMMAND</div>
+        <div class="links">
+          <a href="./index.html">HOME</a>
+          <a href="./skills.html">SKILLS</a>
+          <a class="active" href="./projects.html">PROJECTS</a>
+          <a href="./about.html">ABOUT</a>
+          <a href="./connect.html">CONNECT</a>
+          <a href="./contact.html">CONTACT</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section panel">
+        <h1>Project Intelligence Modules</h1>
+        <div class="project-grid">
+          <article class="card">
+            <h3>Flight Pricing Analytics</h3>
+            <p class="meta">Dataset Type: Airline pricing + route demand</p>
+            <p class="meta">Tools Used: Tableau, SQL, Excel</p>
+            <p>Key Insight: Dynamic route demand can guide time-band pricing to increase revenue without reducing occupancy.</p>
+            <a class="btn alt" href="https://public.tableau.com" target="_blank" rel="noopener noreferrer">Open Dashboard</a>
+          </article>
+
+          <article class="card">
+            <h3>E-commerce Pricing Dashboard</h3>
+            <p class="meta">Dataset Type: Product pricing, clickstream, conversion</p>
+            <p class="meta">Tools Used: Python, Pandas, Tableau</p>
+            <p>Key Insight: Segment-based discounting improves margin retention while maintaining conversion rates.</p>
+            <a class="btn alt" href="https://public.tableau.com" target="_blank" rel="noopener noreferrer">Open Dashboard</a>
+          </article>
+
+          <article class="card">
+            <h3>Gym Performance Analytics</h3>
+            <p class="meta">Dataset Type: Membership activity and retention</p>
+            <p class="meta">Tools Used: Excel, SQL, Tableau</p>
+            <p>Key Insight: Early inactivity alerts predict churn and can trigger retention campaigns.</p>
+            <a class="btn alt" href="https://public.tableau.com" target="_blank" rel="noopener noreferrer">Open Dashboard</a>
+          </article>
+
+          <article class="card">
+            <h3>Retail Sales Dashboard</h3>
+            <p class="meta">Dataset Type: Store-wise sales and inventory movement</p>
+            <p class="meta">Tools Used: SQL, Python, Tableau</p>
+            <p>Key Insight: Product-level stock rotation insights reduce dead inventory and improve turnover.</p>
+            <a class="btn alt" href="https://public.tableau.com" target="_blank" rel="noopener noreferrer">Open Dashboard</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">PROJECT REPOSITORY LINKED</footer>
+  </div>
+
+  <script src="./assets/js/loader.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

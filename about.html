@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataNexus | About</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <div class="boot-screen" data-boot>
+    <div class="boot-card">
+      <h2 class="boot-title">SYSTEM BOOT</h2>
+      <ul class="boot-log" data-boot-log></ul>
+      <div class="boot-progress-wrap"><div class="boot-progress" data-boot-progress></div></div>
+      <div class="boot-percent">0% <span class="cursor" data-boot-percent></span></div>
+    </div>
+  </div>
+
+  <canvas id="matrix"></canvas>
+  <div class="grid-overlay"></div>
+  <div class="radar"></div>
+
+  <div class="wrapper">
+    <header class="topbar">
+      <nav class="nav">
+        <div class="brand">DATANEXUS COMMAND</div>
+        <div class="links">
+          <a href="./index.html">HOME</a>
+          <a href="./skills.html">SKILLS</a>
+          <a href="./projects.html">PROJECTS</a>
+          <a class="active" href="./about.html">ABOUT</a>
+          <a href="./connect.html">CONNECT</a>
+          <a href="./contact.html">CONTACT</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section panel">
+        <h1>Operator Bio</h1>
+        <p class="terminal">$ cat about.txt<span class="cursor"></span></p>
+        <p>
+          I am a Business Analytics student specializing in data visualization, dashboard development, and statistical analysis.
+          I focus on translating complex datasets into clear business narratives that guide strategic decisions.
+        </p>
+        <p>
+          My core interest lies in combining tools like Tableau, SQL, Excel, and Python to build practical analytics systems
+          that improve performance, reduce inefficiencies, and uncover growth opportunities.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">PROFILE MODULE VERIFIED</footer>
+  </div>
+
+  <script src="./assets/js/loader.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
