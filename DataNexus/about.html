@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | DataNexus — Sujit Murari</title>
+  <link rel="icon" href="./assets/images/favicon.ico" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+<div class="cursor-dot" id="cursor-dot"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+<canvas id="matrix-canvas"></canvas>
+<div id="grid-overlay"></div>
+
+<nav>
+  <div class="nav-logo"><span>◈</span> DATA<span>:</span>NEXUS</div>
+  <ul class="nav-links">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./skills.html">Skills</a></li>
+    <li><a href="./projects.html">Projects</a></li>
+    <li><a href="./about.html" class="active">About</a></li>
+    <li><a href="./connect.html">Connect</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-status"><div class="status-dot"></div><span id="nav-clock">--:--:--</span></div>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-close" id="mobile-nav-close">✕</div>
+  <a href="./index.html">Home</a><a href="./skills.html">Skills</a><a href="./projects.html">Projects</a><a href="./about.html" class="active">About</a><a href="./connect.html">Connect</a><a href="./contact.html">Contact</a>
+</div>
+
+<div class="page-wrapper">
+  <div class="page-header">
+    <div class="page-header-tag">// ANALYST PROFILE</div>
+    <h1>ABOUT</h1>
+    <p>Personal data. Background parameters. Mission objectives.</p>
+    <div class="page-divider"></div>
+  </div>
+
+  <section>
+    <div class="about-grid">
+
+      <!-- LEFT: Profile Side -->
+      <div class="about-profile-side fade-up">
+        <img src="./assets/images/profile.png" alt="Sujit Murari" class="about-profile-img" />
+        <div class="about-name">SUJIT MURARI</div>
+        <div class="about-role-text">Business Analytics Student</div>
+
+        <div class="about-stats">
+          <div class="about-stat glass-card" style="padding:0.8rem;">
+            <div class="about-stat-val" data-count="6">0</div>
+            <div class="about-stat-label">Projects</div>
+          </div>
+          <div class="about-stat glass-card" style="padding:0.8rem;">
+            <div class="about-stat-val" data-count="5">0</div>
+            <div class="about-stat-label">Tools</div>
+          </div>
+          <div class="about-stat glass-card" style="padding:0.8rem;">
+            <div class="about-stat-val" data-count="3">0</div>
+            <div class="about-stat-label">Years Learning</div>
+          </div>
+          <div class="about-stat glass-card" style="padding:0.8rem;">
+            <div class="about-stat-val" style="font-size:1rem; color:var(--green);">OPEN</div>
+            <div class="about-stat-label">to Work</div>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem; display:flex; flex-direction:column; gap:0.8rem;">
+          <a href="./contact.html" class="btn btn-primary" style="justify-content:center;">◈ Hire Me</a>
+          <a href="./projects.html" class="btn btn-ghost" style="justify-content:center;">View Projects</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Terminal bio -->
+      <div class="fade-up" style="animation-delay:0.2s">
+        <div class="terminal-box">
+          <div class="terminal-header">
+            <div class="term-dot"></div>
+            <div class="term-dot"></div>
+            <div class="term-dot"></div>
+            <div class="term-title">datanexus@analyst:~</div>
+          </div>
+          <div class="terminal-body" id="terminal-typewriter">
+            <div class="type-line"><span class="term-prompt">$ </span><span class="term-cmd">cat about.txt</span></div>
+            <div class="type-line"><br></div>
+            <div class="type-line"><span class="term-comment"># PROFILE LOADED: SUJIT MURARI</span></div>
+            <div class="type-line"><span class="term-output">I am a <span class="term-highlight">Business Analytics student</span> specializing in</span></div>
+            <div class="type-line"><span class="term-output">data visualization, dashboard development,</span></div>
+            <div class="type-line"><span class="term-output">and statistical analysis.</span></div>
+            <div class="type-line"><br></div>
+            <div class="type-line"><span class="term-comment"># MISSION STATEMENT</span></div>
+            <div class="type-line"><span class="term-output">My mission is to bridge the gap between</span></div>
+            <div class="type-line"><span class="term-output">raw data and strategic business decisions —</span></div>
+            <div class="type-line"><span class="term-output">turning numbers into <span class="term-highlight">narratives that drive action</span>.</span></div>
+            <div class="type-line"><br></div>
+            <div class="type-line"><span class="term-comment"># EXPERTISE DOMAINS</span></div>
+            <div class="type-line"><span class="term-output">▶ Interactive Dashboard Design (Tableau, Power BI)</span></div>
+            <div class="type-line"><span class="term-output">▶ Python-driven data pipelines (Pandas, NumPy)</span></div>
+            <div class="type-line"><span class="term-output">▶ SQL database querying & optimization</span></div>
+            <div class="type-line"><span class="term-output">▶ Business KPI tracking & reporting</span></div>
+            <div class="type-line"><span class="term-output">▶ Pricing & demand analytics</span></div>
+            <div class="type-line"><br></div>
+            <div class="type-line"><span class="term-comment"># CURRENT STATUS</span></div>
+            <div class="type-line"><span class="term-output">Status: <span class="term-highlight">Seeking internship / entry-level role</span></span></div>
+            <div class="type-line"><span class="term-output">Location: <span class="term-highlight">Open to Remote & On-site</span></span></div>
+            <div class="type-line"><br></div>
+            <div class="type-line"><span class="term-prompt">$ </span><span class="term-cursor"></span></div>
+          </div>
+        </div>
+
+        <!-- Education Timeline -->
+        <div style="margin-top:2.5rem;">
+          <div class="section-title fade-up" style="font-size:1rem;">EDUCATION TIMELINE</div>
+          <div class="education-timeline">
+            <div class="timeline-item fade-up">
+              <div class="timeline-year">2022 — PRESENT</div>
+              <div class="timeline-title">B.B.A in Business Analytics</div>
+              <div class="timeline-subtitle">University — Data Intelligence Program</div>
+            </div>
+            <div class="timeline-item fade-up" style="animation-delay:0.1s">
+              <div class="timeline-year">2023</div>
+              <div class="timeline-title">Tableau Desktop Specialist</div>
+              <div class="timeline-subtitle">Tableau Software Certification</div>
+            </div>
+            <div class="timeline-item fade-up" style="animation-delay:0.2s">
+              <div class="timeline-year">2023</div>
+              <div class="timeline-title">Python for Data Science</div>
+              <div class="timeline-subtitle">Coursera / IBM Professional Certificate</div>
+            </div>
+            <div class="timeline-item fade-up" style="animation-delay:0.3s">
+              <div class="timeline-year">2024</div>
+              <div class="timeline-title">SQL for Business Analytics</div>
+              <div class="timeline-subtitle">Google Data Analytics Certificate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <span>◈ DATANEXUS</span> — Sujit Murari &nbsp;|&nbsp; Business Analytics Intelligence Platform &nbsp;|&nbsp; <span>SYSTEM ONLINE</span>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

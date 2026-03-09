@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills | DataNexus — Sujit Murari</title>
+  <link rel="icon" href="./assets/images/favicon.ico" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+<div class="cursor-dot" id="cursor-dot"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+<canvas id="matrix-canvas"></canvas>
+<div id="grid-overlay"></div>
+
+<nav>
+  <div class="nav-logo"><span>◈</span> DATA<span>:</span>NEXUS</div>
+  <ul class="nav-links">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./skills.html" class="active">Skills</a></li>
+    <li><a href="./projects.html">Projects</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a href="./connect.html">Connect</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-status"><div class="status-dot"></div><span id="nav-clock">--:--:--</span></div>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-close" id="mobile-nav-close">✕</div>
+  <a href="./index.html">Home</a><a href="./skills.html" class="active">Skills</a><a href="./projects.html">Projects</a><a href="./about.html">About</a><a href="./connect.html">Connect</a><a href="./contact.html">Contact</a>
+</div>
+
+<div class="page-wrapper">
+  <div class="page-header">
+    <div class="page-header-tag">// CAPABILITY MATRIX</div>
+    <h1>SKILL MODULES</h1>
+    <p>System metrics reflecting technical proficiencies across analytics domains.</p>
+    <div class="page-divider"></div>
+  </div>
+
+  <section>
+    <div class="skills-grid">
+
+      <!-- Data Visualization -->
+      <div class="glass-card skill-category fade-up">
+        <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
+        <div class="skill-category-title">◈ Data Visualization</div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Tableau</span>
+            <span class="skill-pct">92%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="92%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Power BI</span>
+            <span class="skill-pct">78%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="78%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Excel (Pivot/Charts)</span>
+            <span class="skill-pct">89%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="89%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Matplotlib / Seaborn</span>
+            <span class="skill-pct">70%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+        </div>
+      </div>
+
+      <!-- Data Engineering -->
+      <div class="glass-card skill-category fade-up" style="animation-delay:0.15s">
+        <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
+        <div class="skill-category-title" style="color:var(--green);">◈ Data Engineering</div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">SQL</span>
+            <span class="skill-pct skill-pct-green">76%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill green" data-width="76%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Python</span>
+            <span class="skill-pct skill-pct-green">73%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill green" data-width="73%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Pandas / NumPy</span>
+            <span class="skill-pct skill-pct-green">71%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill green" data-width="71%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Excel (VLOOKUP, Macros)</span>
+            <span class="skill-pct skill-pct-green">85%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill green" data-width="85%"></div></div>
+        </div>
+      </div>
+
+      <!-- Analytics & Statistics -->
+      <div class="glass-card skill-category fade-up" style="animation-delay:0.3s">
+        <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
+        <div class="skill-category-title" style="color:var(--orange);">◈ Analytics & Statistics</div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Descriptive Analytics</span>
+            <span class="skill-pct skill-pct-orange">88%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill orange" data-width="88%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Predictive Modeling</span>
+            <span class="skill-pct skill-pct-orange">65%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill orange" data-width="65%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Business Intelligence</span>
+            <span class="skill-pct skill-pct-orange">80%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill orange" data-width="80%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">KPI Dashboard Design</span>
+            <span class="skill-pct skill-pct-orange">84%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill orange" data-width="84%"></div></div>
+        </div>
+      </div>
+
+      <!-- Business & Soft Skills -->
+      <div class="glass-card skill-category fade-up" style="animation-delay:0.45s">
+        <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
+        <div class="skill-category-title" style="color:var(--purple);">◈ Business Intelligence</div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Market Research</span>
+            <span class="skill-pct skill-pct-purple">82%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill purple" data-width="82%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Data Storytelling</span>
+            <span class="skill-pct skill-pct-purple">87%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill purple" data-width="87%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Strategic Reporting</span>
+            <span class="skill-pct skill-pct-purple">79%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill purple" data-width="79%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Competitive Analysis</span>
+            <span class="skill-pct skill-pct-purple">74%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill purple" data-width="74%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div style="margin-top:3rem;">
+      <div class="section-title fade-up">OPERATIONAL CAPABILITIES</div>
+      <div class="section-subtitle fade-up">// SOFT SKILL MATRIX</div>
+      <div class="soft-skills-grid">
+        <div class="soft-skill-badge fade-up"><span class="icon">🔍</span>Critical Thinking</div>
+        <div class="soft-skill-badge fade-up" style="animation-delay:.05s"><span class="icon">📈</span>Data Interpretation</div>
+        <div class="soft-skill-badge fade-up" style="animation-delay:.1s"><span class="icon">🤝</span>Cross-Team Collab</div>
+        <div class="soft-skill-badge fade-up" style="animation-delay:.15s"><span class="icon">📣</span>Presentation Skills</div>
+        <div class="soft-skill-badge fade-up" style="animation-delay:.2s"><span class="icon">⚙️</span>Problem Solving</div>
+        <div class="soft-skill-badge fade-up" style="animation-delay:.25s"><span class="icon">🧠</span>Analytical Thinking</div>
+        <div class="soft-skill-badge fade-up" style="animation-delay:.3s"><span class="icon">📋</span>Project Management</div>
+        <div class="soft-skill-badge fade-up" style="animation-delay:.35s"><span class="icon">✍️</span>Technical Writing</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <span>◈ DATANEXUS</span> — Sujit Murari &nbsp;|&nbsp; Business Analytics Intelligence Platform &nbsp;|&nbsp; <span>SYSTEM ONLINE</span>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

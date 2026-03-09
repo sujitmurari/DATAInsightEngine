@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | DataNexus — Sujit Murari</title>
+  <link rel="icon" href="./assets/images/favicon.ico" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+<div class="cursor-dot" id="cursor-dot"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+<canvas id="matrix-canvas"></canvas>
+<div id="grid-overlay"></div>
+
+<nav>
+  <div class="nav-logo"><span>◈</span> DATA<span>:</span>NEXUS</div>
+  <ul class="nav-links">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./skills.html">Skills</a></li>
+    <li><a href="./projects.html">Projects</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a href="./connect.html">Connect</a></li>
+    <li><a href="./contact.html" class="active">Contact</a></li>
+  </ul>
+  <div class="nav-status"><div class="status-dot"></div><span id="nav-clock">--:--:--</span></div>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-close" id="mobile-nav-close">✕</div>
+  <a href="./index.html">Home</a><a href="./skills.html">Skills</a><a href="./projects.html">Projects</a><a href="./about.html">About</a><a href="./connect.html">Connect</a><a href="./contact.html" class="active">Contact</a>
+</div>
+
+<div class="page-wrapper">
+  <div class="page-header">
+    <div class="page-header-tag">// SECURE TRANSMISSION CHANNEL</div>
+    <h1>CONTACT</h1>
+    <p>Initialize a secure data transmission. Response time: under 24 hours.</p>
+    <div class="page-divider"></div>
+  </div>
+
+  <section>
+    <div class="contact-grid">
+
+      <!-- Info Side -->
+      <div class="contact-info fade-up">
+        <div style="margin-bottom:1.5rem;">
+          <div class="section-title" style="font-size:1rem;">TRANSMISSION SPECS</div>
+          <div class="section-subtitle">// CHANNEL INFORMATION</div>
+        </div>
+
+        <div class="contact-info-card glass-card">
+          <div class="contact-info-icon">📧</div>
+          <div class="contact-info-text">
+            <div class="contact-info-label">EMAIL CHANNEL</div>
+            <div class="contact-info-value">sujit@example.com</div>
+          </div>
+        </div>
+
+        <div class="contact-info-card glass-card">
+          <div class="contact-info-icon">🌐</div>
+          <div class="contact-info-text">
+            <div class="contact-info-label">AVAILABILITY</div>
+            <div class="contact-info-value" style="color:var(--green);">Open to Work — Immediate</div>
+          </div>
+        </div>
+
+        <div class="contact-info-card glass-card">
+          <div class="contact-info-icon">📍</div>
+          <div class="contact-info-text">
+            <div class="contact-info-label">LOCATION</div>
+            <div class="contact-info-value">Remote / On-site Flexible</div>
+          </div>
+        </div>
+
+        <div class="contact-info-card glass-card">
+          <div class="contact-info-icon">⏱</div>
+          <div class="contact-info-text">
+            <div class="contact-info-label">RESPONSE TIME</div>
+            <div class="contact-info-value">≤ 24 hours</div>
+          </div>
+        </div>
+
+        <!-- System diagnostics -->
+        <div class="terminal-box" style="margin-top:1.5rem;">
+          <div class="terminal-header">
+            <div class="term-dot"></div><div class="term-dot"></div><div class="term-dot"></div>
+            <div class="term-title">system.diagnostics</div>
+          </div>
+          <div class="terminal-body" style="padding:1rem; font-size:0.72rem;">
+            <div style="color:var(--text-muted);">> RUNNING DIAGNOSTICS</div>
+            <div style="color:var(--green);">[OK] Email gateway — ACTIVE</div>
+            <div style="color:var(--green);">[OK] LinkedIn profile — ONLINE</div>
+            <div style="color:var(--green);">[OK] Tableau Public — LIVE</div>
+            <div style="color:var(--green);">[OK] GitHub repos — ACCESSIBLE</div>
+            <div style="color:var(--cyan); margin-top:0.5rem;">◉ ALL SYSTEMS OPERATIONAL</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SSH Form -->
+      <div class="fade-up" style="animation-delay:0.2s">
+        <div class="ssh-form">
+          <div class="ssh-header">
+            <span>◉</span>
+            <span style="color:var(--cyan);">ssh hire@sujitmurari</span>
+            <span class="ssh-header-title">SECURE TRANSMISSION // ENCRYPTED</span>
+          </div>
+
+          <div class="ssh-body">
+            <div style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted);margin-bottom:1.5rem;">
+              > Connection established. Initialize transmission protocol.
+            </div>
+
+            <!-- Replace YOUR_FORM_ID with actual Formspree form ID -->
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+              <div class="ssh-prompt-line">
+                <span class="ssh-prompt">name:~$</span>
+                <input
+                  class="ssh-input"
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name..."
+                  required
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="ssh-prompt-line">
+                <span class="ssh-prompt">email:~$</span>
+                <input
+                  class="ssh-input"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email..."
+                  required
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="ssh-prompt-line">
+                <span class="ssh-prompt">subject:~$</span>
+                <input
+                  class="ssh-input"
+                  type="text"
+                  name="subject"
+                  placeholder="Message subject..."
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="ssh-prompt-line" style="align-items:flex-start;">
+                <span class="ssh-prompt" style="padding-top:0.8rem;">msg:~$</span>
+                <textarea
+                  class="ssh-textarea"
+                  name="message"
+                  placeholder="Compose your message..."
+                  required
+                  rows="5"
+                ></textarea>
+              </div>
+
+              <div style="margin-top:1.5rem; display:flex; align-items:center; gap:1rem; flex-wrap:wrap;">
+                <button type="submit" class="btn btn-primary" style="font-size:0.7rem;">
+                  ▶ TRANSMIT MESSAGE
+                </button>
+                <div style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-muted);">
+                  // Powered by Formspree
+                </div>
+              </div>
+
+              <div class="form-status" id="form-status"></div>
+
+            </form>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div style="margin-top:1.5rem; display:grid; grid-template-columns:1fr 1fr; gap:0.8rem;">
+          <a href="https://linkedin.com" target="_blank" class="btn btn-ghost" style="justify-content:center; font-size:0.7rem;">
+            LinkedIn →
+          </a>
+          <a href="https://public.tableau.com" target="_blank" class="btn btn-ghost" style="justify-content:center; font-size:0.7rem;">
+            Tableau Public →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<footer>
+  <span>◈ DATANEXUS</span> — Sujit Murari &nbsp;|&nbsp; Business Analytics Intelligence Platform &nbsp;|&nbsp; <span>SYSTEM ONLINE</span>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

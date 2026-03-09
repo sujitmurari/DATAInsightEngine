@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | DataNexus — Sujit Murari</title>
+  <link rel="icon" href="./assets/images/favicon.ico" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+<div class="cursor-dot" id="cursor-dot"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+<canvas id="matrix-canvas"></canvas>
+<div id="grid-overlay"></div>
+
+<nav>
+  <div class="nav-logo"><span>◈</span> DATA<span>:</span>NEXUS</div>
+  <ul class="nav-links">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./skills.html">Skills</a></li>
+    <li><a href="./projects.html" class="active">Projects</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a href="./connect.html">Connect</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-status"><div class="status-dot"></div><span id="nav-clock">--:--:--</span></div>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-close" id="mobile-nav-close">✕</div>
+  <a href="./index.html">Home</a><a href="./skills.html">Skills</a><a href="./projects.html" class="active">Projects</a><a href="./about.html">About</a><a href="./connect.html">Connect</a><a href="./contact.html">Contact</a>
+</div>
+
+<div class="page-wrapper">
+  <div class="page-header">
+    <div class="page-header-tag">// ANALYTICS MODULE REGISTRY</div>
+    <h1>PROJECT DATABASE</h1>
+    <p>End-to-end analytics solutions spanning pricing intelligence, performance modeling, and retail insights.</p>
+    <div class="page-divider"></div>
+  </div>
+
+  <section>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="glass-card project-card fade-up">
+        <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
+        <div class="project-header">
+          <div class="project-id">MODULE_001 // AVIATION</div>
+          <div class="project-status">DEPLOYED</div>
+        </div>
+        <div class="project-title">Flight Pricing Analytics</div>
+        <div class="project-dataset">Dataset: <span>Aviation Fare Database — 50K+ Records</span></div>
+        <div class="project-insight">
+          Uncovered a 34% fare variance driven by booking lead time patterns. Early bookings (21+ days) consistently undercut last-minute fares by 2.3x across major routes.
+        </div>
+        <div class="project-tools">
+          <span class="tool-tag">Tableau</span>
+          <span class="tool-tag">Python</span>
+          <span class="tool-tag">Pandas</span>
+          <span class="tool-tag">Excel</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://public.tableau.com" target="_blank" class="btn btn-primary" style="font-size:0.65rem; padding:0.5rem 1.2rem;">◈ Tableau Dashboard</a>
+          <a href="#" class="btn btn-ghost" style="font-size:0.65rem; padding:0.5rem 1rem;">Details</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="glass-card project-card fade-up" style="animation-delay:0.1s">
+        <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
+        <div class="project-header">
+          <div class="project-id">MODULE_002 // ECOMMERCE</div>
+          <div class="project-status">DEPLOYED</div>
+        </div>
+        <div class="project-title">E-Commerce Pricing Dashboard</div>
+        <div class="project-dataset">Dataset: <span>Online Retail Transactions — 120K Records</span></div>
+        <div class="project-insight">
+          Dynamic price segmentation model revealed hidden 28% revenue uplift potential through competitor gap analysis and seasonal demand correlation mapping.
+        </div>
+        <div class="project-tools">
+          <span class="tool-tag">Tableau</span>
+          <span class="tool-tag">SQL</span>
+          <span class="tool-tag">Excel</span>
+          <span class="tool-tag">Power BI</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://public.tableau.com" target="_blank" class="btn btn-primary" style="font-size:0.65rem; padding:0.5rem 1.2rem;">◈ Tableau Dashboard</a>
+          <a href="#" class="btn btn-ghost" style="font-size:0.65rem; padding:0.5rem 1rem;">Details</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="glass-card project-card fade-up" style="animation-delay:0.2s">
+        <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
+        <div class="project-header">
+          <div class="project-id">MODULE_003 // FITNESS</div>
+          <div class="project-status">DEPLOYED</div>
+        </div>
+        <div class="project-title">Gym Performance Analytics</div>
+        <div class="project-dataset">Dataset: <span>Fitness Center Member Data — 6 Months</span></div>
+        <div class="project-insight">
+          Member retention patterns identified across 6-month behavioral dataset. Peak hour analysis reduced equipment bottlenecks by 22%, improving member satisfaction scores.
+        </div>
+        <div class="project-tools">
+          <span class="tool-tag">Python</span>
+          <span class="tool-tag">Pandas</span>
+          <span class="tool-tag">Tableau</span>
+          <span class="tool-tag">Matplotlib</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://public.tableau.com" target="_blank" class="btn btn-primary" style="font-size:0.65rem; padding:0.5rem 1.2rem;">◈ Tableau Dashboard</a>
+          <a href="#" class="btn btn-ghost" style="font-size:0.65rem; padding:0.5rem 1rem;">Details</a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="glass-card project-card fade-up" style="animation-delay:0.3s">
+        <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
+        <div class="project-header">
+          <div class="project-id">MODULE_004 // RETAIL</div>
+          <div class="project-status">DEPLOYED</div>
+        </div>
+        <div class="project-title">Retail Sales Dashboard</div>
+        <div class="project-dataset">Dataset: <span>Superstore Sales Dataset — Regional Breakdown</span></div>
+        <div class="project-insight">
+          Regional performance heatmap exposed West Coast as 41% more profitable than Midwest. Category-level drill-down revealed office supplies as the highest-margin segment.
+        </div>
+        <div class="project-tools">
+          <span class="tool-tag">Tableau</span>
+          <span class="tool-tag">SQL</span>
+          <span class="tool-tag">Excel</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://public.tableau.com" target="_blank" class="btn btn-primary" style="font-size:0.65rem; padding:0.5rem 1.2rem;">◈ Tableau Dashboard</a>
+          <a href="#" class="btn btn-ghost" style="font-size:0.65rem; padding:0.5rem 1rem;">Details</a>
+        </div>
+      </div>
+
+      <!-- Project 5 - bonus -->
+      <div class="glass-card project-card fade-up" style="animation-delay:0.4s">
+        <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
+        <div class="project-header">
+          <div class="project-id">MODULE_005 // FINANCIAL</div>
+          <div class="project-status" style="border-color:var(--orange);color:var(--orange);">IN PROGRESS</div>
+        </div>
+        <div class="project-title">Revenue Forecasting Model</div>
+        <div class="project-dataset">Dataset: <span>SME Financial Data — Q1–Q4 Historical</span></div>
+        <div class="project-insight">
+          Time-series forecasting model predicting quarterly revenue with 89% accuracy using seasonal decomposition and rolling average smoothing techniques.
+        </div>
+        <div class="project-tools">
+          <span class="tool-tag">Python</span>
+          <span class="tool-tag">Pandas</span>
+          <span class="tool-tag">NumPy</span>
+          <span class="tool-tag">Tableau</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://public.tableau.com" target="_blank" class="btn btn-primary" style="font-size:0.65rem; padding:0.5rem 1.2rem;">◈ Preview</a>
+          <a href="#" class="btn btn-ghost" style="font-size:0.65rem; padding:0.5rem 1rem;">Details</a>
+        </div>
+      </div>
+
+      <!-- Project 6 - bonus -->
+      <div class="glass-card project-card fade-up" style="animation-delay:0.5s">
+        <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
+        <div class="project-header">
+          <div class="project-id">MODULE_006 // HR ANALYTICS</div>
+          <div class="project-status">DEPLOYED</div>
+        </div>
+        <div class="project-title">Employee Attrition Analysis</div>
+        <div class="project-dataset">Dataset: <span>HR Dataset — IBM Watson Analytics</span></div>
+        <div class="project-insight">
+          Identified top 5 predictors of employee churn with 84% model precision. Work-life balance score emerged as the strongest attrition driver across all departments.
+        </div>
+        <div class="project-tools">
+          <span class="tool-tag">Python</span>
+          <span class="tool-tag">SQL</span>
+          <span class="tool-tag">Tableau</span>
+          <span class="tool-tag">Seaborn</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://public.tableau.com" target="_blank" class="btn btn-primary" style="font-size:0.65rem; padding:0.5rem 1.2rem;">◈ Tableau Dashboard</a>
+          <a href="#" class="btn btn-ghost" style="font-size:0.65rem; padding:0.5rem 1rem;">Details</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<footer>
+  <span>◈ DATANEXUS</span> — Sujit Murari &nbsp;|&nbsp; Business Analytics Intelligence Platform &nbsp;|&nbsp; <span>SYSTEM ONLINE</span>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

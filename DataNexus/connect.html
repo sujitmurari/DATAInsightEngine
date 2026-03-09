@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect | DataNexus — Sujit Murari</title>
+  <link rel="icon" href="./assets/images/favicon.ico" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <style>
+    .connect-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 2rem 4rem;
+    }
+
+    /* Network animation */
+    .network-bg {
+      position: relative;
+      padding: 4rem 2rem;
+      overflow: hidden;
+    }
+    .node-pulse {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(0,245,255,0.15);
+      animation: node-expand 4s ease-out infinite;
+      pointer-events: none;
+    }
+    @keyframes node-expand {
+      0% { transform: translate(-50%,-50%) scale(0); opacity: 0.8; }
+      100% { transform: translate(-50%,-50%) scale(4); opacity: 0; }
+    }
+
+    .connect-node {
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      backdrop-filter: blur(10px);
+    }
+    .connect-node:hover {
+      background: var(--cyan-faint);
+      border-color: var(--border-active);
+      box-shadow: var(--glow-md);
+    }
+
+    .availability-card {
+      border: 1px solid var(--green);
+      background: rgba(0,255,136,0.03);
+      padding: 2rem;
+      text-align: center;
+      margin-top: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .availability-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(0,255,136,0.05) 0%, transparent 60%);
+    }
+    .avail-status {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      color: var(--green);
+      text-shadow: 0 0 20px var(--green-glow);
+      letter-spacing: 0.2em;
+      margin-bottom: 0.5rem;
+    }
+    .avail-desc {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-secondary);
+      letter-spacing: 0.1em;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+<div class="cursor-dot" id="cursor-dot"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+<canvas id="matrix-canvas"></canvas>
+<div id="grid-overlay"></div>
+
+<nav>
+  <div class="nav-logo"><span>◈</span> DATA<span>:</span>NEXUS</div>
+  <ul class="nav-links">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./skills.html">Skills</a></li>
+    <li><a href="./projects.html">Projects</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a href="./connect.html" class="active">Connect</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-status"><div class="status-dot"></div><span id="nav-clock">--:--:--</span></div>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-close" id="mobile-nav-close">✕</div>
+  <a href="./index.html">Home</a><a href="./skills.html">Skills</a><a href="./projects.html">Projects</a><a href="./about.html">About</a><a href="./connect.html" class="active">Connect</a><a href="./contact.html">Contact</a>
+</div>
+
+<div class="page-wrapper">
+  <div class="page-header">
+    <div class="page-header-tag">// NETWORK NODES</div>
+    <h1>CONNECT</h1>
+    <p>Establish a connection across professional networks and collaborative platforms.</p>
+    <div class="page-divider"></div>
+  </div>
+
+  <div class="connect-section">
+    <div class="section-title fade-up">CONNECTION NODES</div>
+    <div class="section-subtitle fade-up">// SELECT CHANNEL TO ESTABLISH LINK</div>
+
+    <div class="connect-grid">
+
+      <!-- LinkedIn -->
+      <div class="glass-card connect-node fade-up">
+        <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
+        <div class="node-icon" style="background: rgba(0,119,181,0.1); border-color: #0077b5; font-size:1.6rem;">in</div>
+        <div class="connect-node-title">LinkedIn</div>
+        <div class="connect-node-desc">Professional Network // Node Active</div>
+        <a href="https://linkedin.com" target="_blank" class="connect-node-link">
+          Connect on LinkedIn →
+        </a>
+        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-muted);margin-top:0.5rem;">STATUS: ● ONLINE</div>
+      </div>
+
+      <!-- Tableau Public -->
+      <div class="glass-card connect-node fade-up" style="animation-delay:0.1s">
+        <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
+        <div class="node-icon" style="background: rgba(30,144,255,0.1); border-color: #1e90ff;">📊</div>
+        <div class="connect-node-title">Tableau Public</div>
+        <div class="connect-node-desc">Analytics Portfolio // Dashboards Live</div>
+        <a href="https://public.tableau.com" target="_blank" class="connect-node-link">
+          View Dashboards →
+        </a>
+        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-muted);margin-top:0.5rem;">STATUS: ● ONLINE</div>
+      </div>
+
+      <!-- GitHub -->
+      <div class="glass-card connect-node fade-up" style="animation-delay:0.2s">
+        <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
+        <div class="node-icon" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.2);">⌨️</div>
+        <div class="connect-node-title">GitHub</div>
+        <div class="connect-node-desc">Source Code Repo // Projects Repository</div>
+        <a href="https://github.com" target="_blank" class="connect-node-link">
+          Explore Repos →
+        </a>
+        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-muted);margin-top:0.5rem;">STATUS: ● ONLINE</div>
+      </div>
+
+      <!-- Email -->
+      <div class="glass-card connect-node fade-up" style="animation-delay:0.3s">
+        <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
+        <div class="node-icon" style="background: rgba(0,245,255,0.1); border-color: var(--cyan);">✉️</div>
+        <div class="connect-node-title">Direct Email</div>
+        <div class="connect-node-desc">Secure Channel // Response Time &lt;24hrs</div>
+        <a href="mailto:sujit@example.com" class="connect-node-link">
+          Send Message →
+        </a>
+        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--green);margin-top:0.5rem;">STATUS: ● ACTIVE</div>
+      </div>
+
+    </div>
+
+    <!-- Availability Banner -->
+    <div class="availability-card fade-up">
+      <div class="corner-tl" style="border-color:var(--green)"></div>
+      <div class="corner-tr" style="border-color:var(--green)"></div>
+      <div class="corner-bl" style="border-color:var(--green)"></div>
+      <div class="corner-br" style="border-color:var(--green)"></div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:0.6rem;margin-bottom:0.8rem;">
+        <div class="status-dot"></div>
+        <div class="avail-status">OPEN TO OPPORTUNITIES</div>
+        <div class="status-dot"></div>
+      </div>
+      <div class="avail-desc">
+        Currently seeking internship positions and entry-level roles in Business Analytics,<br>
+        Data Analysis, BI Reporting, or Dashboard Development.
+      </div>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="./contact.html" class="btn btn-secondary">⟶ Send a Message</a>
+        <a href="https://linkedin.com" target="_blank" class="btn btn-ghost">Connect on LinkedIn</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <span>◈ DATANEXUS</span> — Sujit Murari &nbsp;|&nbsp; Business Analytics Intelligence Platform &nbsp;|&nbsp; <span>SYSTEM ONLINE</span>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

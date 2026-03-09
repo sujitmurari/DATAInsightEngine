@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataNexus | Sujit Murari — Business Analytics</title>
+  <link rel="icon" href="./assets/images/favicon.ico" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cursor-dot"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- Boot Screen -->
+<div id="boot-screen">
+  <div class="boot-logo glitch" data-text="DATANEXUS">DATANEXUS</div>
+  <div class="boot-subtitle">Analytics Intelligence Platform</div>
+  <div class="boot-terminal" id="boot-terminal"></div>
+  <div class="boot-progress-wrap">
+    <div class="boot-progress-label">
+      <span>LOADING SYSTEM</span>
+      <span id="boot-pct">0%</span>
+    </div>
+    <div class="boot-progress-bar">
+      <div class="boot-progress-fill" id="boot-fill"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Backgrounds -->
+<canvas id="matrix-canvas"></canvas>
+<div id="grid-overlay"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <span>◈</span> DATA<span>:</span>NEXUS
+  </div>
+  <ul class="nav-links">
+    <li><a href="./index.html" class="active">Home</a></li>
+    <li><a href="./skills.html">Skills</a></li>
+    <li><a href="./projects.html">Projects</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a href="./connect.html">Connect</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-status">
+    <div class="status-dot"></div>
+    <span id="nav-clock">--:--:--</span>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-close" id="mobile-nav-close">✕</div>
+  <a href="./index.html">Home</a>
+  <a href="./skills.html">Skills</a>
+  <a href="./projects.html">Projects</a>
+  <a href="./about.html">About</a>
+  <a href="./connect.html">Connect</a>
+  <a href="./contact.html">Contact</a>
+</div>
+
+<div class="page-wrapper">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-tag">◈ ANALYST PROFILE LOADED</div>
+      <h1 class="hero-name">
+        SUJIT
+        <span class="highlight">MURARI</span>
+      </h1>
+      <div class="hero-role">// Business Analytics Student</div>
+      <p class="hero-tagline">
+        Transforming business data into strategic insights — one dashboard at a time.
+      </p>
+      <div class="hero-tools">
+        <span class="tool-badge">Tableau</span>
+        <span class="tool-badge">Excel</span>
+        <span class="tool-badge">SQL</span>
+        <span class="tool-badge">Python</span>
+        <span class="tool-badge">Pandas</span>
+        <span class="tool-badge">Power BI</span>
+      </div>
+      <div class="hero-cta">
+        <a href="./projects.html" class="btn btn-primary">◈ View Projects</a>
+        <a href="./skills.html" class="btn btn-secondary">▶ View Skills</a>
+        <a href="./contact.html" class="btn btn-ghost">⟶ Contact</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="profile-frame">
+        <img src="./assets/images/profile.png" alt="Sujit Murari" />
+        <div class="scan-line"></div>
+        <div class="profile-ring"></div>
+        <div class="profile-ring-2"></div>
+      </div>
+
+      <!-- Radar -->
+      <div class="radar-display">
+        <svg class="radar-svg" width="100" height="100" viewBox="0 0 100 100">
+          <circle class="radar-circle" cx="50" cy="50" r="45"/>
+          <circle class="radar-circle" cx="50" cy="50" r="30"/>
+          <circle class="radar-circle" cx="50" cy="50" r="15"/>
+          <line class="radar-line" x1="5" y1="50" x2="95" y2="50"/>
+          <line class="radar-line" x1="50" y1="5" x2="50" y2="95"/>
+          <g class="radar-sweep">
+            <path d="M50,50 L50,5 A45,45 0 0,1 95,50 Z" fill="url(#sweepGrad)" opacity="0.3"/>
+          </g>
+          <circle class="radar-dot" cx="30" cy="35" r="3"/>
+          <circle class="radar-dot" cx="65" cy="25" r="2" style="animation-delay:1s"/>
+          <circle class="radar-dot" cx="70" cy="65" r="2.5" style="animation-delay:2s"/>
+          <defs>
+            <radialGradient id="sweepGrad" cx="0%" cy="100%">
+              <stop offset="0%" stop-color="#00f5ff" stop-opacity="0"/>
+              <stop offset="100%" stop-color="#00f5ff" stop-opacity="0.8"/>
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- KPI DASHBOARD -->
+  <section style="padding: 2rem 2rem 4rem;">
+    <div class="section-title fade-up">ANALYTICS DASHBOARD</div>
+    <div class="section-subtitle fade-up">// REAL-TIME METRICS</div>
+
+    <div class="kpi-grid">
+      <div class="glass-card kpi-card fade-up">
+        <div class="corner-tl"></div><div class="corner-tr"></div>
+        <div class="corner-bl"></div><div class="corner-br"></div>
+        <span class="kpi-icon">📊</span>
+        <div class="kpi-value" data-count="10">0</div>
+        <div class="kpi-label">Projects Completed</div>
+        <div class="kpi-trend">▲ Active Research</div>
+      </div>
+      <div class="glass-card kpi-card green fade-up" style="animation-delay:0.1s">
+        <div class="corner-tl"></div><div class="corner-tr"></div>
+        <div class="corner-bl"></div><div class="corner-br"></div>
+        <span class="kpi-icon">⚡</span>
+        <div class="kpi-value" data-count="12">0</div>
+        <div class="kpi-label">Core Skills</div>
+        <div class="kpi-trend">▲ Growing Rapidly</div>
+      </div>
+      <div class="glass-card kpi-card orange fade-up" style="animation-delay:0.2s">
+        <div class="corner-tl"></div><div class="corner-tr"></div>
+        <div class="corner-bl"></div><div class="corner-br"></div>
+        <span class="kpi-icon">🛠</span>
+        <div class="kpi-value" data-count="6">0</div>
+        <div class="kpi-label">Tools Mastered</div>
+        <div class="kpi-trend">▲ Industry Standard</div>
+      </div>
+      <div class="glass-card kpi-card purple fade-up" style="animation-delay:0.3s">
+        <div class="corner-tl"></div><div class="corner-tr"></div>
+        <div class="corner-bl"></div><div class="corner-br"></div>
+        <span class="kpi-icon">🎯</span>
+        <div class="kpi-value" style="font-size:1.5rem; color: var(--purple); text-shadow: 0 0 20px var(--purple-glow);">ACTIVE</div>
+        <div class="kpi-label">Internship Status</div>
+        <div class="kpi-trend" style="color:var(--purple);">◉ Seeking Opportunities</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PREVIEW -->
+  <section style="padding: 0 2rem 4rem;">
+    <div class="section-title fade-up">LATEST INTELLIGENCE</div>
+    <div class="section-subtitle fade-up">// RECENT PROJECTS SNAPSHOT</div>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fill,minmax(280px,1fr)); gap:1rem; margin-top:1.5rem;">
+      <div class="glass-card fade-up" style="padding:1.5rem;">
+        <div class="corner-tl"></div><div class="corner-tr"></div>
+        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-muted);letter-spacing:0.2em;margin-bottom:0.8rem;">PROJECT_01 // AVIATION</div>
+        <div style="font-family:var(--font-display);font-size:1rem;color:var(--text-primary);margin-bottom:0.8rem;">Flight Pricing Analytics</div>
+        <div style="font-size:0.85rem;color:var(--text-secondary);border-left:2px solid var(--cyan);padding-left:0.8rem;margin-bottom:1rem;">Uncovered 34% fare variance driven by booking lead time patterns.</div>
+        <a href="./projects.html" class="btn btn-ghost" style="font-size:0.65rem;padding:0.4rem 1rem;">VIEW MODULE →</a>
+      </div>
+      <div class="glass-card fade-up" style="padding:1.5rem;animation-delay:0.1s">
+        <div class="corner-tl"></div><div class="corner-tr"></div>
+        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-muted);letter-spacing:0.2em;margin-bottom:0.8rem;">PROJECT_02 // ECOMMERCE</div>
+        <div style="font-family:var(--font-display);font-size:1rem;color:var(--text-primary);margin-bottom:0.8rem;">E-Commerce Pricing Dashboard</div>
+        <div style="font-size:0.85rem;color:var(--text-secondary);border-left:2px solid var(--green);padding-left:0.8rem;margin-bottom:1rem;">Dynamic price segmentation boosted revenue insights by 28%.</div>
+        <a href="./projects.html" class="btn btn-ghost" style="font-size:0.65rem;padding:0.4rem 1rem;">VIEW MODULE →</a>
+      </div>
+      <div class="glass-card fade-up" style="padding:1.5rem;animation-delay:0.2s">
+        <div class="corner-tl"></div><div class="corner-tr"></div>
+        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-muted);letter-spacing:0.2em;margin-bottom:0.8rem;">PROJECT_03 // FITNESS</div>
+        <div style="font-family:var(--font-display);font-size:1rem;color:var(--text-primary);margin-bottom:0.8rem;">Gym Performance Analytics</div>
+        <div style="font-size:0.85rem;color:var(--text-secondary);border-left:2px solid var(--orange);padding-left:0.8rem;margin-bottom:1rem;">Member retention patterns identified via 6-month behavioral data.</div>
+        <a href="./projects.html" class="btn btn-ghost" style="font-size:0.65rem;padding:0.4rem 1rem;">VIEW MODULE →</a>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:2rem;" class="fade-up">
+      <a href="./projects.html" class="btn btn-primary">◈ Access All Projects</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <span>◈ DATANEXUS</span> — Sujit Murari &nbsp;|&nbsp; Business Analytics Intelligence Platform &nbsp;|&nbsp; <span>SYSTEM ONLINE</span>
+</footer>
+
+<script src="./assets/js/loader.js"></script>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
